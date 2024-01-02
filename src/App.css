@@ -1,38 +1,140 @@
-.App {
-  text-align: center;
+*{
+  box-sizing: border-box;
 }
-
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+body{
+  margin: 0px;
+  padding: 0px;
+  font-family: Arial, Helvetica, sans-serif;
+  font-size: 12px;
 }
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+header{
+  background: #262626;
+  max-width: 1440px;
+  min-width: 320px;
+  width: 100%;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.header_div{
   display: flex;
-  flex-direction: column;
+  max-width: 1440px;
+  min-width: 320px;
+  width: 100%;
+  margin: 0 auto;
+  flex-direction: row;
   align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  justify-content: space-between;
+  padding: 10px 10px;
+}
+.logo_div img{
+  width: 50px;
+}
+.header_title{
+  color: #ffffff;
+  font-size: 20px;
+  line-height: 24px;
+  margin: 0px;
+  padding: 0px;
+}
+.header_menu{
+  list-style: none;
+  margin: 0px;
+  width: 83px;
+}
+.header_menu li{
+  float: right;
+}
+.header_menu li a{
+  color: #ffffff;
+  font-size: 14px;
+}
+.pendingcount{
+  margin: 10px 0px;
+  color: red;
+  text-align: right;
+  font-weight: bold;
 }
 
-.App-link {
-  color: #61dafb;
+.content_div{
+  max-width: 1440px;
+  min-width: 320px;
+  width: 100%;
+  margin: 20px auto 0px;
+  padding: 0px 10px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+input,select{
+  width: 100%;
+  padding: 3px;
+}
+ button{
+  border: none;
+  background: #262626;
+  color: #ffffff;
+  font-size: 14px;
+  padding: 5px 10px;
+}
+.hide{
+  display: none !important;
+}
+
+.page_title{
+  font-size: 18px;
+  border-bottom: 2px solid #000;
+  padding-bottom: 5px;
+  line-height: 22px;
+  margin: 0px;
+}
+
+.login_page{
+  width: 310px;
+  margin: 0 auto;
+}
+
+.field_div_label {
+  margin: 10px 0px 0px;
+  font-weight: bold;
+}
+.field_div_element {
+  margin: 10px 0px;
+}
+.field_div_button{
+  margin: 10px 0px 0px;
+}
+
+.menu_div{
+  margin: 10px;
+}
+.menu_div ul{
+  list-style: none;
+  display: flex;
+  margin: 0px;
+  padding: 0px;
+  justify-content: end;
+}
+
+
+.employeelist_header{
+  display: flex;
+  justify-content: space-around;
+  background: #ccc;
+  color: #262626;
+  font-weight: bold;
+}
+.employeelist_each{
+  display: flex;
+  justify-content: space-around;
+}
+.employeelist_header div,.employeelist_each div{
+  width: 20%;
+  text-align: center;
+  padding: 5px 0px;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.badgepending{
+  color: red;
+  font-weight: bold;
+}
+.badgedone{
+  color: green;
+  font-weight: bold;
 }
